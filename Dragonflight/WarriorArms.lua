@@ -1601,6 +1601,23 @@ spec:RegisterAbilities( {
         handler = function ()
         end,
     },
+        
+    
+    escape_artist = {
+        id = 20589,
+        cast = 0,
+        cooldown = 60,
+        gcd = "off",
+        icd = 1,
+
+        race = "gnome",
+        startsCombat = false,
+        texture = 132309,
+
+        handler = function ()
+            applyBuff ( "escape_artist" )
+        end,
+    },
 } )
 
 spec:RegisterSetting( "shockwave_interrupt", true, {
